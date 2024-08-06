@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: url('./forest-7922999_1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.512);
+    width: clamp(300px, 95%, 500px);
+    margin: 5% auto;
+    box-shadow: 1px 1px 5px rgb(40, 40, 40);
+    border-radius: 1rem;
+}
+.container > div{
+    text-align: center;
+    padding:  2rem;
+    display: grid;
+    gap: 1rem;
+}
+.container > div input{
+    padding: .5rem;
+    height: 3rem;
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 5px;
+    
+}
+.container > div input:focus{
+    outline: 1px solid rgb(24, 24, 255);
+}
+.container > div a{
+    font-size: .8rem;
+    text-decoration: none; 
+}
+.container > div button{
+    padding: .8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(24, 24, 255);
+    color: white;
+    font-size: 1.1rem;
+}
+.container > div input::after{
+    content: 'huhuh';
+    background-color: aqua;
+    position: absolute;
+}
+.container > div p{
+    font-size: .8rem;
+}
+.container .sign-up-container{
+    display: none;
+}
+.correction{
+    display: grid;
+    text-align: left;
+    color: red;
+}
+.correction span{
+    transition: .3s;
+    opacity: 0;
+    display: block;
+}
+.correction:last-child{
+    opacity: 0;
+    text-align: center;
+}

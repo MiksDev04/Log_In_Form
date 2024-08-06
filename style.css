@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body{
-    min-height: 100vh;
+    min-height: 100dvh;
     background-image: url('./forest-7922999_1920.jpg');
     background-repeat: no-repeat;
     background-size: cover;

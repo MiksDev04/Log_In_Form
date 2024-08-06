@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Log In Form</title>
+</head>
+<body>
+    <form class="container" novalidate>
+        <div class="log-in-container">
+            <h2>Log In</h2>
+            <p class="correction" id="email-correction"><span>a</span>
+            <input type="email" name="" id="email" required placeholder="Enter your email" autocomplete="off">
+            </p>
+            <p class="correction" id="password-correction"><span>a</span>
+                <input type="password" name="" id="password" required placeholder="Enter your password" autocomplete="off">
+            </p>
+            <a href="#">Forgot password?</a>
+            <button type="submit" id="submit-log-in">Log In</button>
+            <p>Don't have an account? <a href="#" id="sign-up">Sign Up</a></p>
+            <p class="correction">Login failed! Invalid email or password</span></p>
+        </div>
+        <div class="sign-up-container">
+            <h2>Register</h2>
+            <p class="correction" id="new-email-correction"><span>a</span>
+                <input type="email" name="" id="new-email" required placeholder="Enter your email" autocomplete="off">
+            </p>
+            <p class="correction" id="new-password-crrection"><span>a</span>
+                <input type="password" name="" id="new-password" required placeholder="Enter your password" autocomplete="off" min="6">
+            </p>
+            <p class="correction" id="confirm-new-password-correction"><span>a</span>
+                <input type="password" name="" id="confirm-new-password" required placeholder="Enter your new password" autocomplete="off" min="5">
+            </p>
+            <a href="#">Forgot password?</a>
+            <button type="submit" id="submit-sign-up">Sign Up</button>
+            <p>Already have an account? <a href="#" id="back-to-log-in">Log In</a></p>
+            <p class="correction">Login failed! Invalid email or password</span></p>
+        </div>
+    </form>
+</body>
+</html>
